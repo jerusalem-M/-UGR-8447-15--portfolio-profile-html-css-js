@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about me.html">About Me</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-section">
+            <h1 id="contact-header">Contact</h1>
+            <div id="social-media-links">    
+                <a href="https://www.linkedin.com/in/eyerusalem-kumsa-232467297/" target="_blank"><img src="assets/Images/linkdin.jpg" alt="LinkedIn"></a>
+                <a href="https://github.com/jerusalem-M" target="_blank"><img src="assets/Images/Github.jpg" alt="GitHub"></a>
+                <a href="mailto:jerusalemmoges1111@gmail.com"><img src="assets/Images/Gmail.jpg" alt="Email"></a>
+                <a href="https://instagram.com/yourprofile" target="_blank"><img src="assets/Images/instagram.jpg" alt="Instagram"></a>
+            </div>
+            <form id="contact-form" action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" id="submit-button">Enter</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2024 Eyerusalem Moge. Fueled by late nights and caffeine 😊</p>
+    </footer>
+</body>
+</html>
