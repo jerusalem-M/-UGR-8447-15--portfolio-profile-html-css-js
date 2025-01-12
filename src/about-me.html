@@ -4,37 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="background-styles.css">
+    <link rel="stylesheet" href="CSS/About.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about me.html">About Me</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <article class="about-section">
-            <div class="about-images">
-                <img src="assets/Images/image1.jpg" alt="Image 1" class="about-image">
-                <img src="assets/Images/image2.jpg" alt="Image 2" class="about-image">
-            </div>
+    <div class="grid-container">
+        <div class="grid-item grid-item-1">
+            <header>
+                <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                  </div>
+                <nav aria-label="Main navigation">
+                    <ul class="nav" id="menu">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-me.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="grid-item grid-item-2">
             <h1>About Me</h1>
-            <p class="about-description">I am a third-year Software Engineering student at Addis Ababa Institution Of Technology University, deeply passionate about using<br> technology to create meaningful change. My dream is to leave a lasting mark, turning<br> ideas into solutions that can make a difference. But beyond academics, I have a strong<br> connection to nature. Green is my favorite color because it reminds me of earth,<br> balance, and life itself. I also love soft yellow and orange for the warmth and positivity it brings.<br> <br>
+        </div>
+        <div class="grid-item grid-item-3">
+            <img src="images/image1.jpg" alt="Image 1" class="about-image image1">
+            <img src="images/image2.png" alt="Image 2" class="about-image image2">
+        </div>
+        <div class="grid-item grid-item-4">
+            <p class="about-description">I am a third-year Software Engineering student at Addis Ababa Institution Of Technology University, deeply passionate about using technology to create meaningful change. My dream is to leave a lasting mark, turning ideas into solutions that can make a difference. But beyond academics, I have a strong connection to nature. Green is my favorite color because it reminds me of earth, balance, and life itself. I also love soft yellow and orange for the warmth and positivity it brings.
 
-                I have an unstoppable urge to learn and explore. From the vastness of astronomy and<br> the logic of physics to the stories of history and the myths of ancient Greece, I find<br> inspiration everywhere. This curiosity drives me to see the world differently and fuels<br> my belief that creativity is limitless.<br><br>
+                I have an unstoppable urge to learn and explore. From the vastness of astronomy and the logic of physics to the stories of history and the myths of ancient Greece, I find inspiration everywhere. This curiosity drives me to see the world differently and fuels my belief that creativity is limitless.
                 
-                For me, coding is more than just a skill; it’s an art form. It’s a way to express my<br> thoughts and ideas, turning them into something tangible and impactful. Every<br> line of code feels like a brushstroke on a canvas, helping me create solutions that blend<br> imagination and reality. Through learning, curiosity, and creativity, I aim to bring my<br> vision to life and share it with the world.</p>
-        </article>
-    </main>
+                For me, coding is more than just a skill; it’s an art form. It’s a way to express my thoughts and ideas, turning them into something tangible and impactful. Every line of code feels like a brushstroke on a canvas, helping me create solutions that blend imagination and reality. Through learning, curiosity, and creativity, I aim to bring my vision to life and share it with the world.</p>
+        </div>
 
-    <footer>
-        <p>&copy;2024 Eyerusalem Moge. Fueled by late nights and caffeine 😊</p>
-    </footer>
+        <div class="grid-item grid-item-5">
+            <footer>
+                <p id="simple">Simplifying complexity, Beautifully.</p>
+                <p class="copy">&copy;2024 Eyerusalem Moges. Fueled by late nights and caffeine.</p>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

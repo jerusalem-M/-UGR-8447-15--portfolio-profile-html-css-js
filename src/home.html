@@ -4,33 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about me.html">About Me</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <div>
-                <img src="assets/Images/profile.jpg" alt="Profile Picture">
-                <p>Eyerusalem Moges</p>
+    <div class="grid-container">
+        <div class="grid-item grid-item-1">
+            <header>
+                <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                  </div>
+                <nav aria-label="Main navigation">
+                    <ul class="nav" id="menu">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-me.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="grid-item grid-item-2">
+            <img src="images/JJ.jpg" alt="profile picture" class="profile">
+            <p class="name">Eyerusalem Moges</p>
+        </div>
+        <div class="grid-item grid-item-3">
+            <h1>Welcome to My Page</h1>
+            <div class="content">
+                <p class="intro">I'm Eyerusalem Moges.</p>
+                <p>This is my personal space on the web.</p>
             </div>
-            <div>
-                <h1>Welcome to My tiny world!🌼</h1>
-                <p>I'm Eyerusalem Moges. <br> This is my personal space on the web. <br> Take your time exploring my story, interests, and passions. </p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy;2024 Eyerusalem Moge. Fueled by late nights and caffeine 😊</p>
-    </footer>
+        </div>
+        <div class="grid-item grid-item-4">
+            <footer>
+                <p id="simple">Simplifying complexity, Beautifully.</p>
+                <p class="copy">&copy;2024 Eyerusalem Moges. Fueled by late nights and caffeine.</p>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
